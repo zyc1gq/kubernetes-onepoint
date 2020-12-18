@@ -3,7 +3,9 @@ centos7系统一键部署kubernetes 1.16环境
 
 环境说明：纯净的centos7环境,cpu核数大于2,内存大于2G,使用root账户进行操作。
 
-功能说明：能够自动关闭防火墙，更换国内yum,docker,kubernetes源，自动配置网络dns，自动下载安装docker,kubelet,kubectl,kubeadm,并完成相关配置。
+功能说明：能够自动关闭防火墙，更换国内yum,docker,kubernetes源，自动配置网络dns，自动下载安装docker,kubelet,kubectl,kubeadm,并自动完成鉴权等相关配置。
+只需要完成节点文件配置，并再节点之间拷贝kubernetes-onepoint/文件夹即可
+
 ## Step 1 配置文件与网卡修改 ##
 1.在node_list.json文件里按照文件内的格式进行配置，格式为"ip":"name"<br>
 2.再dns文件也按ip name格式填写,可参考文件中的格式。<br>
