@@ -5,8 +5,8 @@ centos7系统一键部署kubernetes 1.16环境
 
 功能说明：能够自动关闭防火墙，更换国内yum,docker,kubernetes源，自动配置网络dns，自动下载安装docker,kubelet,kubectl,kubeadm,并完成相关配置。
 ## Step 1 配置文件与网卡修改##
-1.在node_list.json文件里按照文件内的格式进行配置，格式为"ip":"name"
-2.再dns文件也按ip name格式填写,可参考文件中的格式。
+1.在node_list.json文件里按照文件内的格式进行配置，格式为"ip":"name"<br>
+2.再dns文件也按ip name格式填写,可参考文件中的格式。<br>
 3.将all.sh中第二行的ens33修改成环境下的网卡。
 
 ## Step 2 建立master节点##
